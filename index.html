@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        survey-form
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <link href="/styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container">
+    
+
+        <div id="credentialsForm" class="container__form right">
+            <div id="title" class="form__title" ><h1 class="title">NEFLI Skander Survey Form</h1>
+            <p id="description" class="title_paragraph">thank you for taking the time to help improve ourselves</p></div>
+            <div class="line"></div>
+            <form action="" class="form" id="survey-form" >
+                <div class="form__input--group">
+                <label id="name-label">Name
+                    <input id="name" type="text" class="form_input" autofocus placeholder="Please enter your name..." required>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input--group">
+                <label id="email-label">Email 
+                    <input id="email"type="text" class="form_input" placeholder="Please enter your Email..." required>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input--group">
+                <label id="number-label">Age<span>(optional)</span>
+                    <input id="number" min="10" max="99" value="" type="number" class="form_input" autofocus placeholder="Please enter your age.. ">
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input--group">
+                <label id="role-label">which option best descibes your role?
+                    <select id="dropdown">
+                        <option class="placeholder">select current role</option>
+                        <option>full time job</option>
+                        <option>full time learner</option>
+                        <option>prefer not to say</option>
+                        <option>other</option>
+                    </select>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <button type="submit" id="submit" class="btn">submit</button>
+            </form>
+        </div> 
+        <div id="recommendationForm" class="container__form display--hidden right  ">
+            <div class="form__title" ><h1 class="title">NEFLI Skander Survey Form</h1>
+                <p class="title_paragraph">thank you for taking the time to help improve ourselves</p></div>
+                <div class="line"></div>
+            <form action="" class="form" id="recommendation">
+                <div class="form__input--group">
+                <label id="recommendation-label">would you recommend me to a friend?
+                    <label class="label" for="recommendation__1"><input type="radio" name="recommendation" value="1" id="recommendation__1" checked="checked">Definitely</label>
+                    <label class="label" for="recommendation__2"><input type="radio" name="recommendation" value="2" id="recommendation__2">Maybe</label>
+                    <label class="label" for="recommendation__3"><input type="radio" name="recommendation" value="3" id="recommendation__3">Not sure</label>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input--group">
+                <label id="favorite__part-label">what is your favorite part about my work
+                    <select id="dropdown">
+                        <option>select an option</option>
+                        <option>creative</option>
+                        <option>original</option>
+                        <option>simple</option>
+                        <option>other</option>
+                    </select>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <button type="submit" id="submit_1" class="btn">submit</button>
+            </form>
+        </div>
+        <div id="suggestionForm" class="container__form right display--hidden">
+            <div class="form__title" ><h1 class="title">NEFLI Skander Survey Form</h1>
+                <p class="title_paragraph">thank you for taking the time to help improve ourselves</p></div>
+                <div class="line"></div>
+            <form action="" class="form" id="improvementSurvey">
+                <div class="form__input--group">
+                    <label id="suggestion-label">what do you like to see improved?<span class="title_paragraph">Check all that apply</span>
+                       <div style="display:block"><input  type="checkbox" name="suggestion" value="1" id="suggestion__1"><label for="suggestion__1">Front-end Projects</label></div>
+                       <div style="display:block"><input type="checkbox" name="suggestion" value="2" id="suggestion__2"><label for="suggestion__2">Back-end projects</label></div>
+                        <div style="display:block"><input type="checkbox" name="suggestion" value="3" id="suggestion__3"><label for="suggestion__3">Data Visualisation</label></div>
+                            <div style="display:block"><input type="checkbox" name="suggestion" value="4" id="suggestion__4"><label for="suggestion__4">challenges</label></div>
+                                <div style="display:block"><input type="checkbox" name="suggestion" value="5" id="suggestion__5"><label for="suggestion__5">open source community</label></div>
+                                    <div style="display:block"><input type="checkbox" name="suggestion" value="6" id="suggestion__6"><label for="suggestion__6">gitter</label></div>
+                                        <div style="display:block"><input type="checkbox" name="suggestion" value="7" id="suggestion__7"><label for="suggestion__7">videos</label></div>
+                                            <div style="display:block"><input type="checkbox" name="suggestion" value="8" id="suggestion__8"><label for="suggestion__8">meetups</label></div>
+                                                <div style="display:block"><input type="checkbox" name="suggestion" value="9" id="suggestion__9"><label for="suggestion__9">wiki</label></div>
+                                                    <div style="display:block"><input type="checkbox" name="suggestion" value="10" id="suggestion__10"><label for="suggestion__10">forum</label></div>
+                                                        <div style="display:block"><input type="checkbox" name="suggestion" value="11" id="suggestion__11"><label for="suggestion__11">courses</label></div>
+                    </label>
+                    <div class="form__input-error-message"></div>
+                    </div>
+                <div class="form__input-group">
+                <label id="comments-label">Any comments or suggestions?
+                    <textarea class="form_input" name="suggestion-comment" id="suggestion-comment" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+                </label>
+                <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group"></div>
+                <button type="submit" id="submit_2" class="btn">submit</button>
+
+            </form>
+        </div>
+        <div id="imageContainer" class="container__image left position">
+        </div>
+    </div>
+<script >
+    document.addEventListener("DOMContentLoaded",()=>{
+    const credentialsForm = document.querySelector("#credentialsForm");
+    const recommendationForm = document.querySelector("#recommendationForm");
+    const suggestionForm = document.querySelector("#suggestionForm");
+    document.querySelector("#submit").addEventListener("click",e =>{
+        e.preventDefault();
+        credentialsForm.classList.add("display--hidden");
+        recommendationForm.classList.remove("display--hidden");
+   })
+   document.querySelector("#submit_1").addEventListener("click", e=>{
+    e.preventDefault();
+    recommendationForm.classList.add("display--hidden");
+    suggestionForm.classList.remove("display--hidden");
+})
+})
+</script>
+</body>
+</html>
